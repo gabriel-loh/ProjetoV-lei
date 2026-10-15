@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Posições - Vôlei</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">VÔLEI</a>
+            <div class="menu">
+                <a href="historia.html">HISTÓRIA</a>
+                <a href="regras.html">REGRAS</a>
+                <a href="posicoes.html">POSIÇÕES</a>
+                <a href="campeoes.html">PRINCIPAIS COMPETIÇÕES</a>
+                <a href="brasil.html">BRASIL</a>
+                <a href="praia.html">VÔLEI DE PRAIA</a>
+                <a href="curiosidades.html">CURIOSIDADES</a>
+                <a href="videos.html">VÍDEOS</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-simulador">
+        <div class="topo-pagina">
+            <p class="subtitulo">SIMULADOR INTERATIVO</p>
+            <h1>Posições do Vôlei</h1>
+            <p class="descricao">Clique nos números da quadra abaixo para entender a função de cada jogador em quadra!</p>
+        </div>
+
+        <div class="container-simulador">
+            <div class="quadra" role="group" aria-label="Quadra interativa de voleibol. Selecione uma posição para ver sua função.">
+                <div class="rede-vertical">REDE</div>
+                <button class="pos-btn" style="top: 20%; left: 15%;" aria-label="Ver função da posição 5" onclick="mostrarPosicao(5)">5</button>
+                <button class="pos-btn" style="top: 50%; left: 15%;" aria-label="Ver função da posição 6" onclick="mostrarPosicao(6)">6</button>
+                <button class="pos-btn" style="top: 80%; left: 15%;" aria-label="Ver função da posição 1" onclick="mostrarPosicao(1)">1</button>
+                <button class="pos-btn" style="top: 20%; left: 60%;" aria-label="Ver função da posição 4" onclick="mostrarPosicao(4)">4</button>
+                <button class="pos-btn" style="top: 50%; left: 60%;" aria-label="Ver função da posição 3" onclick="mostrarPosicao(3)">3</button>
+                <button class="pos-btn" style="top: 80%; left: 60%;" aria-label="Ver função da posição 2" onclick="mostrarPosicao(2)">2</button>
+            </div>
+
+            <div class="painel-info" id="painelInfo">
+                <h3>🔍 Detalhes da Posição</h3>
+                <p>Clique em uma das posições numeradas (1 a 6) ao lado na quadra para ver a explicação detalhada de sua função e o que ela faz no jogo.</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px;">
+            <a href="index.html" class="botao">← VOLTAR AO INÍCIO</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
